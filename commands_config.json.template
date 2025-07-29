@@ -1,0 +1,8 @@
+{
+  "commands": [
+    {
+      "name": "Run Example Command",
+      "command": "echo Hello World"
+    }
+  ]
+}
