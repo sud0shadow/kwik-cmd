@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "kwik-cmd"
+version = "0.1.0"
+description = "KDE Plasma widget for managing and running shell commands"
+authors = ["Kaustuv Prajapati <kaustuvprajapati@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyQt5 = "^5.15.0"
+
+[tool.poetry.group.dev.dependencies]
+# Add development dependencies here (if any)
+
+# This section should be an array of tables
+# Specifying the packages directory structure
+[[tool.poetry.packages]]
+include = "kwik_cmd"
+from = "src"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
